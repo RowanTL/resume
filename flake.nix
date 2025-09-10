@@ -8,20 +8,20 @@
   };
 
   outputs = { self, nixpkgs, flake-utils }:
-    flake-utils.lib.eachDefaultSystem (system: 
+    flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = nixpkgs.legacyPackages.${system};
       in
-        pkgs.mkShellNoCC {
-          buildInputs = [ pkgs.bashInteractive ];
-          packages = with pkgs; [
+      {
+        devShells.default = pkgs.mkShell {
+          name = "latex-env";
+
+          buildInputs = with pkgs; [
             kile
             texlive.scheme-full
           ];
-          shellHook = ''
-            export SHELL=${pkgs.lib.getExe pkgs.bashInteractive}
-          '';
         };
+      }
     );
 }
 
