@@ -18,7 +18,7 @@
 
           buildInputs = with pkgs; [
             kile
-            texlive.scheme-full
+            texlivePackages.scheme-full
           ];
         };
       }
