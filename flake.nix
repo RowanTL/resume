@@ -12,7 +12,6 @@
       let
         pkgs = nixpkgs.legacyPackages.${system};
       in
-      {
         pkgs.mkShellNoCC {
           buildInputs = [ pkgs.bashInteractive ];
           packages = with pkgs; [
@@ -23,7 +22,6 @@
             export SHELL=${pkgs.lib.getExe pkgs.bashInteractive}
           '';
         };
-      };
-    });
+    );
 }
 
