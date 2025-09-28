@@ -1,2 +1,7 @@
 # don't want these visible
 canonical-resume
+
+
+# Added by cargo
+
+/target
