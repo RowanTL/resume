@@ -9,3 +9,7 @@ version of my resume.
 
 Starting on 9/27/25, I will be applying to one new position every day
 until I get a job.
+
+**I will not use AI in any of my resumes or cover letters from here on out.**
+I would rather show that a human is applying to these positions rather than
+a bot.
