@@ -1,6 +1,5 @@
-# don't want these visible
-canonical-resume
-
+# rust ignore
+dist
 
 # Added by cargo
 
