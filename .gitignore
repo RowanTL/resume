@@ -1,6 +1,9 @@
 # rust ignore
 dist
 
+# latex ignore
+resume.synctex.gz
+
 # Added by cargo
 
 /target
