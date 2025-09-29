@@ -32,7 +32,10 @@
             openssl
             pkg-config
             (rust-bin.stable.latest.default.override {
-              extensions = [ "rust-src" ];
+              extensions = [
+                "rust-src"
+                "rust-analyzer"
+              ];
               targets = [ "wasm32-unknown-unknown" ];
             })
             trunk
