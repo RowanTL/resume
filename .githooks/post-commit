@@ -41,6 +41,7 @@ cat > docs/index.html <<EOF
 <body>
   <div class="label">resumes created:</div>
   <div class="number">${count}</div>
+  <div class="label">https://brokenglass.dev/general-resume/</div>
 </body>
 </html>
 EOF
