@@ -11,7 +11,7 @@ async fn info() -> impl Responder {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Resumes Counter</title>
       <style>
-        body {
+        body {{
           margin: 0;
           background-color: purple;
           color: white;
@@ -21,25 +21,26 @@ async fn info() -> impl Responder {
           align-items: center;
           height: 100vh;
           font-family: Arial, sans-serif;
-        }
+        }}
 
-        .label {
+        .label {{
           font-size: 2rem;
           margin-bottom: 0.5rem;
-        }
+        }}
 
-        .number {
+        .number {{
           font-size: 4rem;
           font-weight: bold;
-        }
+        }}
       </style>
     </head>
     <body>
       <div class="label">resumes created:</div>
-      <div class="number">12</div>
+      <div class="number">{}</div>
     </body>
     </html>
-    "#
+    "#,
+        1
     );
 
     HttpResponse::Ok()
