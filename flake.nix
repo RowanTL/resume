@@ -7,8 +7,15 @@
     rust-overlay.url = "github:oxalica/rust-overlay";
   };
 
-  outputs = { self, nixpkgs, flake-utils, rust-overlay }:
-    flake-utils.lib.eachDefaultSystem (system:
+  outputs =
+    {
+      self,
+      nixpkgs,
+      flake-utils,
+      rust-overlay,
+    }:
+    flake-utils.lib.eachDefaultSystem (
+      system:
       let
         pkgs = import nixpkgs {
           inherit system overlays;
@@ -25,6 +32,7 @@
             openssl
             pkg-config
             (rust-bin.stable.latest.default.override {
+              extensions = [ "rust-src" ];
               targets = [ "wasm32-unknown-unknown" ];
             })
             trunk
@@ -33,4 +41,3 @@
       }
     );
 }
-
