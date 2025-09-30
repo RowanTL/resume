@@ -2,6 +2,7 @@
 \usepackage{graphicx} % Required for inserting images
 \setlength{\parindent}{0pt}
 \usepackage{enumitem}
+\usepackage{multicol}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lipsum}
@@ -20,15 +21,28 @@
 %\vspace{0.5pt}
 
 \begin{center}
-    \textbf{Education}
+    \textbf{Skills}
 \end{center}
-\textbf{Missouri University of Science and Technology} \hfill Rolla, MO
 
-B.S. Computer Science, with a Minor in Mathematics \hfill December 2024
-
-\textit{Summa Cum Laude} \hfill GPA: 3.80
-
-%\vspace{12pt}
+\begin{multicols}{3}
+    \begin{itemize}[noitemsep, topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=0pt]
+        \item PyTorch
+        \item YOLO
+        \item C++
+        \item Rust
+        \item Docker
+        \item HuggingFace
+        \item Django
+        \item Godot
+        \item Evolutionary Computing
+        \item SQL
+        \item MATLAB
+        \item Linux
+        \item CUDA
+        \item Anaconda
+        \item Haskell
+    \end{itemize}
+\end{multicols}
 
 \begin{center}
     \textbf{Experience}
@@ -37,20 +51,24 @@ B.S. Computer Science, with a Minor in Mathematics \hfill December 2024
 \textbf{NSF REU Program} \hfill May 2024 - October 2024
 
 \textsl{Missouri University of Science and Technology} \hfill Rolla, MO
-\begin{itemize}[noitemsep]
-    \item Utilize Bi-Directional LLMs to Correct Errors in Genome Reads
-    \item Use HuggingFace library to interact with Models
+\begin{itemize}[noitemsep, topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=0pt]
+    \item Research Bi-Directional LLMs to Correct Errors in Genome Reads
+    \begin{itemize}[noitemsep, topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=0pt]
+        \item Analyze Genome Sequences left$\rightarrow$right and right$\rightarrow$left together
+    \end{itemize}
+    \item Developed with HuggingFace library to interact with Models
     \item Interact with Campus HPC and CUDA for Training
-    \begin{itemize}[noitemsep]
-        \item Utilized Slurm on said HPC
+    \begin{itemize}[noitemsep, topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=0pt]
+        \item Execute Slurm Scripts on said HPC
     \end{itemize}
     \item Clean text data with Scikit-learn and Scikit-bio
 \end{itemize}
 
+
 \textbf{Undergraduate Research Assistant} \hfill May 2023 - October 2023
 
 \textsl{Center for Intelligent Infrastructure} \hfill Rolla, MO
-\begin{itemize}[noitemsep]
+\begin{itemize}[noitemsep, topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=0pt]
     \item Perform Annotations for Image Segmentation Convolutional Neural Networks
     \item Calculate Optical Flow with MATLAB and C++
 \end{itemize}
@@ -60,17 +78,17 @@ B.S. Computer Science, with a Minor in Mathematics \hfill December 2024
 \textbf{Data Science Co-Op} \hfill January 2022 - August 2022
 
 \textsl{Hunter Engineering Company} \hfill Bridgeton, MO
-\begin{itemize}[noitemsep]
+\begin{itemize}[noitemsep, topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=0pt]
     \item Train Convolutional Neural Networks with YOLO and PyTorch
-    \begin{itemize}[noitemsep]
-        \item Train a Classification Model to detect if a car is too close to cameras and remove from training data
-        \begin{itemize}[noitemsep]
+    \begin{itemize}[noitemsep, topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=0pt]
+        \item Train Classification Models to detect if a car is too close to cameras and remove from training data
+        \begin{itemize}[noitemsep, topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=0pt]
             \item Resulted in an increase of annotation efficiency
         \end{itemize}
-        \item Train a Segmentation Model to detect if a license plate was from NA or Europe
+        \item Train Segmentation Models to detect if a license plate originated from NA or Europe
     \end{itemize}
-    \item Used Python in internal tooling to manage Data
-    \item Containerized Models with Docker
+    \item Implement Python Data Management Algorithms
+    \item Containerize Models inside Docker
 \end{itemize}
 
 %\vspace{12pt}
@@ -80,18 +98,28 @@ B.S. Computer Science, with a Minor in Mathematics \hfill December 2024
 \end{center}
 
 \textbf{Self-Hosted Linux Server} \hfill January 2023 - Present
-\begin{itemize}[noitemsep]
-    \item Installed CUDA for Training Purposes
-    \item Trained a pet bird object detection model with YOLOv6
-    \item Host Label Studio Server for image annotation
-    \item Ran local LLMs via ollama to see how they function
+\begin{itemize}[noitemsep, topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=0pt]
+    \item Utilize CUDA for Accelerated Model Training
+    \item Construct a bird detection AI
+    \item Annotate Images via Label Studio
+    \item Fine-Tune Local LLMs
+    \item Assemble Anaconda Training Environments
 \end{itemize}
 
 \textbf{Rust Evolutionary Computing Framework} \hfill March 2025 - Present
-\begin{itemize}[noitemsep]
-    \item A PushGP implementation from scratch
+\begin{itemize}[noitemsep, topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=0pt]
+    \item Coded A PushGP implementation in Pure Rust
     \item Trained on financial data for next day prediction
 \end{itemize}
+
+\begin{center}
+    \textbf{Education}
+\end{center}
+\textbf{Missouri University of Science and Technology} \hfill Rolla, MO
+
+B.S. Computer Science, with a Minor in Mathematics \hfill December 2024
+
+\textit{Summa Cum Laude} \hfill GPA: 3.80
 
 \begin{center}
     \textbf{Invited Talks}
@@ -100,7 +128,7 @@ B.S. Computer Science, with a Minor in Mathematics \hfill December 2024
 \textbf{Genetic Programming in Python @ PySTL} \tiny{https://www.youtube.com/watch?v=ZzYi\_j2IYuY} \hfill \normalsize{September 18th, 2025}
 
 \begin{center}
-    \tiny{Link to this LaTeX resume: https://github.com/RowanTL/resume/blob/main/general-resume/resume.pdf}
+    \tiny{Link to this LaTeX resume: https://github.com/RowanTL/resume/blob/main/nvidia-resume/resume.pdf}
 \end{center}
 
 \end{document}
