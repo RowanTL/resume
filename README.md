@@ -15,6 +15,8 @@ I would rather show that a human is applying to these positions instead of AI sl
 
 ## Resume Count
 
-If you want to see how many resumes I've created, `cargo run` and go to `127.0.0.1:8080`.
+There are two methods to see how many resumes are in this repo:
 
-This was just an excuse to learn a bit about yew and actix web.
+1) Go to [brokenglass.dev/resume/](brokenglass.dev/resume/)
+
+2) clone the repo, `cargo run`, go to `127.0.0.1:8080`
