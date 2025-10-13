@@ -20,3 +20,6 @@ There are two methods to see how many resumes are in this repo:
 1) Go to [brokenglass.dev/resume/](brokenglass.dev/resume/)
 
 2) clone the repo, `cargo run`, go to `127.0.0.1:8080`
+
+## Jobs applied to since 2025-10-13
+- Google
